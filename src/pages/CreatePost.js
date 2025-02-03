@@ -13,7 +13,7 @@ const CreatePost = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/api/posts", newPost); 
+      const response = await axios.post("https://blogbackend-zj70.onrender.com/api/posts", newPost); 
       alert(`Post created successfully! Post ID: ${response.data._id}`);
       setTitle("");
       setContent("");
